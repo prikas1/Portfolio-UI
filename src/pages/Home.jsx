@@ -25,12 +25,13 @@ function Home() {
 
     const [user, setUser] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
-    const [isSending, setIsSending] = useState(false);
+   
 
     useEffect(() => {
         document.cookie = `portfolio-name=portfolio1`;
   const fetchUserData = async () => {
     try {
+        // const response = await fetch(`/Portfolio-UI/${BASE_URL}/get/user/${params?.user ?? userId}`);
         const response = await fetch(`${BASE_URL}/get/user/${params?.user ?? userId}`);
         const userData = await response.json();
 
@@ -55,15 +56,6 @@ function Home() {
     }, [params?.user, userId, navigate]);
     console.log(user);
 
-
-// filtering all the data from the API
-    const sortedFilteredSkills = user?.skills?.filter((item) => item.enabled)?.sort((a, b) => a.sequence - b.sequence);
-    const sortedFilteredProject = user?.projects?.filter((item) => item.enabled)?.sort((a, b) => a.sequence - b.sequence);
-    const filteredServices = user?.services?.filter((item) => item.enabled);
-    const filteredTestimonials = user?.testimonials?.filter((item) => item.enabled);
-    const filteredSocialHandles = user?.social_handles?.filter((item) => item.enabled);
-    const filteredEducation = user?.timeline?.filter((item) => item.forEducation && item.enabled);
-    const filteredExperience = user?.timeline?.filter((item) => !item.forEducation && item.enabled);
 
     if (isLoading) {
         return <div className="w-full h-screen bg-black flex items-center justify-center text-center">Loading..</div>;
