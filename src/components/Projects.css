@@ -1,0 +1,58 @@
+
+
+.project-wrap {
+  padding: 4em 0;
+}
+
+
+
+.project {
+  margin-bottom: 30px;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.project h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.tech-stack {
+  margin-bottom: 10px;
+}
+
+.tech-stack span {
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}

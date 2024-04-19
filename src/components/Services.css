@@ -1,0 +1,58 @@
+
+
+.ftco-section {
+  padding: 4em 0;
+}
+
+.ftco-section .heading-section {
+  margin-bottom: 30px;
+}
+
+.ftco-section .heading-section h1.big {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.ftco-section .heading-section h2 {
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+.services-wrap {
+  background: #f8f9fa;
+  border-radius: 20px;
+  padding: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.services-wrap:hover {
+  transform: translateY(-10px);
+}
+
+.services-wrap .icon img {
+  max-width: 70px;
+  height: auto;
+}
+
+.services-wrap .media-body {
+  width: 100%;
+}
+
+.services-wrap .media-body h3 {
+  font-size: 22px;
+  color: #212529;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.services-wrap .media-body p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.services-wrap .media-body .charge {
+  font-size: 18px;
+  color: #007bff;
+  font-weight: bold;
+}
