@@ -41,7 +41,7 @@ function Contact({ emailID, phone, address, social_handles }) {
           </div>
         </div>
         <div className="row block-9">
-          <div className="col-md-6 px-5 order-md-last pr-md-5">
+          <div className="col-md-6 px-5 order-md-last pb-4 pr-md-5">
             <form onSubmit={handleSubmit} className="contact-form bg-slate-300 p-2 rounded-lg">
               <div className="form-group p-2">
                 <input

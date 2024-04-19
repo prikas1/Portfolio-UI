@@ -1,4 +1,5 @@
 {
+    "homepage": "https://prikas1.github.com/Portfolio-UI/",
     "name": "vite-template",
     "private": true,
     "version": "0.0.0",
@@ -9,7 +10,9 @@
         "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
         "preview": "vite preview",
         "precommit": "lint-staged",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist"
     },
     "lint-staged": {
         "src/**/*.{js,jsx,ts,tsx}": [
